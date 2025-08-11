@@ -1,0 +1,29 @@
+<?php
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+echo "sé loko mó preguiça :(";
+?>
