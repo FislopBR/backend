@@ -11,12 +11,12 @@ class BebidaController {
         return $this->dao->lerBebidas();
     }
     public function criar($nome, $categoria, $volume, $valor, $qtde) {
-        $bebida = new Bebida( $nome, $categoria, $volume, $valor, $qtde);
+        $bebida = new Bebida($nome,  $categoria, $volume, $valor, $qtde);
         $this->dao->criarBebida($bebida);
     }
-    public function atualizar( $nome, $valor, $qtde) {
-        $this->dao->atualizarBebida( $nome, $valor, $qtde);
-    }
+public function atualizar($nomeAntigo, $novoNome, $novaCategoria, $novoVolume, $novoValor, $novaQtde) {
+    $this->dao->atualizarBebida($nomeAntigo, $novoNome, $novaCategoria, $novoVolume, $novoValor, $novaQtde);
+}
     public function deletar($nome) {
         $this->dao->excluirBebida($nome);
     }

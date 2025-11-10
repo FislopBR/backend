@@ -1,0 +1,37 @@
+{
+    "Coca-cola": {
+        "nome": "Coca-cola",
+        "categoria": "Refrigerante",
+        "volume": "2000ml",
+        "valor": "13.80",
+        "qtde": "500"
+    },
+    "skol": {
+        "nome": "skol",
+        "categoria": "Cerveja",
+        "volume": "350ml",
+        "valor": "5.60",
+        "qtde": "120"
+    },
+    "vinho": {
+        "nome": "vinho",
+        "categoria": "Vinho",
+        "volume": "700ml",
+        "valor": "240",
+        "qtde": "67"
+    },
+    "chevet": {
+        "nome": "chevet",
+        "categoria": "Destilado",
+        "volume": "320ml",
+        "valor": "6.25",
+        "qtde": "397"
+    },
+    "\u00c1gua": {
+        "nome": "\u00c1gua",
+        "categoria": "\u00c1gua",
+        "volume": "500ml",
+        "valor": "2.50",
+        "qtde": "677"
+    }
+}

@@ -7,7 +7,8 @@ class Bebida {
     private $valor;
     private $qtde;
 
-    public function __construct($nome, $categoria, $volume, $valor, $qtde){
+
+    public function __construct($nome, $categoria, $volume, $valor, $qtde) {
         $this->nome = $nome;
         $this->categoria = $categoria;
         $this->volume = $volume;

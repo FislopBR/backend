@@ -21,7 +21,7 @@ class BebidaDAO {
                     $info['categoria'],
                     $info['volume'],
                     $info['valor'],
-                    $info['qtde']
+                    $info['qtde'],
                 );
             }
         }
@@ -56,13 +56,24 @@ class BebidaDAO {
         public function lerBebidas(){
             return $this->bebidasArray;
         }
-        public function atualizarBebida($nome, $novoValor, $novaQtde){
-            if(isset($this->bebidasArray[$nome])){
-                $this->bebidasArray[$nome]->setValor($novoValor);
-                $this->bebidasArray[$nome]->setQtde($novaQtde);
-            }
-            $this->salvarArquivo();
+public function atualizarBebida($nomeAntigo, $novoNome, $novaCategoria, $novoVolume, $novoValor, $novaQtde){
+    if(isset($this->bebidasArray[$nomeAntigo])){
+        // 1. Atualiza as propriedades do objeto Bebida existente
+        $this->bebidasArray[$nomeAntigo]->setNome($novoNome);
+        $this->bebidasArray[$nomeAntigo]->setCategoria($novaCategoria);
+        $this->bebidasArray[$nomeAntigo]->setVolume($novoVolume);
+        $this->bebidasArray[$nomeAntigo]->setValor($novoValor);
+        $this->bebidasArray[$nomeAntigo]->setQtde($novaQtde);
+        
+        // 2. Se o nome foi alterado, remove o item antigo e o adiciona com a nova chave
+        if($nomeAntigo !== $novoNome) {
+            $bebidaAtualizada = $this->bebidasArray[$nomeAntigo];
+            unset($this->bebidasArray[$nomeAntigo]);
+            $this->bebidasArray[$novoNome] = $bebidaAtualizada;
         }
+    }
+    $this->salvarArquivo();
+}
         public function excluirBebida($nome){
             unset($this->bebidasArray[$nome]);
             $this->salvarArquivo();
