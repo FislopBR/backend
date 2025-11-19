@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #121212; /* fundo escuro tecnológico */
+    color: #E0E0E0; /* texto suave */
+    padding: 20px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h1, h2 {
+    color: #00BFA6; /* verde azulado tecnológico */
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 5px #00BFA6;
+}
+
+hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Formulários */
+form {
+    background: #1E1E1E;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 191, 166, 0.3);
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #2A2A2A;
+    color: #E0E0E0;
+    transition: 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #00BFA6;
+    box-shadow: 0 0 5px #00BFA6;
+    outline: none;
+}
+
+form button {
+    background: #00BFA6;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #00FFC1;
+}
+
+/* Tabela de bebidas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1E1E1E;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 191, 166, 0.2);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background: #272727;
+    color: #00BFA6;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+table tr:nth-child(even) {
+    background: #2A2A2A;
+}
+
+table tr:hover {
+    background: #333;
+}
+
+/* Botões de Ação */
+input[type="submit"] {
+    background: #00BFA6;
+    color: #121212;
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #00FFC1;
+}
+
+/* Mensagens de aviso */
+.confirm-delete {
+    color: #FF6B6B;
+    font-weight: bold;
+}
