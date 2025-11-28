@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Área de Cadastro - Oficina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">← Voltar para Home</a>
+        
+        <div class="form-container">
+            <h2>Cadastrar Novo Cliente</h2>
+            <form action="inserir_cliente.php" method="POST">
+                <label>Nome:</label>
+                <input type="text" name="nome_cli" required>
+                <label>CPF:</label>
+                <input type="text" name="cpf" required>
+                <label>Telefone:</label>
+                <input type="text" name="cell_cli">
+                <label>Endereço:</label>
+                <input type="text" name="ende_cli">
+                <button type="submit">Salvar Cliente</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Cadastrar Novo Funcionário</h2>
+            <form action="inserir_funcionario.php" method="POST">
+                <label>Nome:</label>
+                <input type="text" name="nome_func" required>
+                <label>CPF:</label>
+                <input type="text" name="cpf" required>
+                <label>Telefone:</label>
+                <input type="text" name="cell_func">
+                <label>Cargo:</label>
+                <input type="text" name="cargo">
+                <button type="submit">Salvar Funcionário</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+    <h2>Cadastrar Nova Ordem de Serviço</h2>
+    <form action="inserir_os.php" method="POST">
+        <label>ID do Cliente:</label>
+        <input type="number" name="id_cliente" required>
+        <label>ID do Carro:</label>
+        <input type="number" name="id_carro" required>
+        <label>Descrição do Problema:</label>
+        <textarea name="desc_problema"></textarea>
+        
+        <label>Status:</label>
+        <input type="text" name="status_os" value="Aberto" required> <label>Prazo:</label>
+        <input type="date" name="prazo"> <label>Valor Total (Opcional):</label>
+        <input type="number" step="0.01" name="valor_total"> <button type="submit">Salvar Ordem de Serviço</button>
+    </form>
+</div>
+        
+    </div>
+</body>
+</html>
